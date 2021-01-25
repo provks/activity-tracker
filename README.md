@@ -1,8 +1,7 @@
 # Trackit : activity-tracker-app
 <!-- ABOUT THE PROJECT -->
 ## About Trackit
-
-A web app to kepp track of hours spent on various activities by employees using firebase. I am starting this as an assignment to learn and explore as of now. Looking forward building it together with you in near future.
+A web app to keep the track of hours spent on various activities by employees using real-time databse. I am starting this as an assignment to learn and explore as of now. Looking forward building it together with you in near future.
 
 ### Features
 * User Registration and Login using Google Authentication with Firebase.
@@ -22,14 +21,9 @@ A web app to kepp track of hours spent on various activities by employees using 
 * There is no option to pause the task timer except the breaks mentioned above.
 * When the task is switched, the old task gets completed and the new task becomes the active task.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
 ### Built With
-
 Here are list of frameworks/liberary/technology to know what's empowering Trackit.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Nodejs] (https://nodejs.org/en/)
-* [Firebase] (https://firebase.google.com/)
+* [Nodejs](https://nodejs.org/en/)
+* [Firebase](https://firebase.google.com/)
