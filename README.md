@@ -5,7 +5,7 @@ A web app to keep the track of hours spent on various activities by employees us
 
 ### Features
 * User Registration and Login using Google Authentication with Firebase.
-* Create a new task with task title, description, and time allotted for the task.
+* Create a new task with task title, and description of the task.
 * List of tasks created by user. 
 * Select a task to start working on it. (active task)
 * Lunch hours and break during the shift.
@@ -13,13 +13,12 @@ A web app to keep the track of hours spent on various activities by employees us
 * Fairly mobile friendly.
 
 ### Design Decisions
-* User can fill the shift start and shift end timings only once after registration. No updations allowed!
-* Any active tasks ends as sooon as shift ends.
-* Combined tasks time cannot be greater than the shift time (i.e. 8hrs - 1hr(lunch + 1break) = 7hrs).
+* User can fill the shift start and shift end timings only once after registration.
 * The lunch break lasts for 45 minutes only.
-* Only upto two breaks are allowed during the day. A break lasts for 20 minutes only.
+* A break lasts for 20 minutes only.
 * There is no option to pause the task timer except the breaks mentioned above.
 * When the task is switched, the old task gets completed and the new task becomes the active task.
+* Any active tasks ends as soon as the shift ends.
 
 ### Built With
 Here are list of frameworks/liberary/technology to know what's empowering Trackit.
