@@ -1,0 +1,33 @@
+{
+  "name": "activity-tracker",
+  "version": "0.1.0",
+  "description": "A web app to kepp track of hours spent on various activities using firebase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/provks/activity-tracker.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "firebase",
+    "firestore",
+    "activity-tracker",
+    "assignment",
+    "whitehat"
+  ],
+  "author": "Varun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/provks/activity-tracker/issues"
+  },
+  "homepage": "https://github.com/provks/activity-tracker#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
