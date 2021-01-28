@@ -4,6 +4,7 @@
   "description": "A web app to kepp track of hours spent on various activities using firebase.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
