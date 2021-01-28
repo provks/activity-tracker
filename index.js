@@ -8,6 +8,7 @@ const app = express();
 
 // user express router
 app.use('/', require('./routes'));
+
 // set up view engine
 app.set('view engine', 'ejs');
 // path for the ejs files directory, views
