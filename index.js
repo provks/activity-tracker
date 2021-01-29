@@ -6,8 +6,14 @@ const port = 8000;
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
 
+// middleware for accessing static files from
+app.use(express.static('./assets'));
+
 // to allow express to use layouts
 app.use(expressLayouts);
+// extract styles and scripts from sub-pages to head of layout
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
 
 // user express router
 app.use('/', require('./routes'));
@@ -15,7 +21,8 @@ app.use('/', require('./routes'));
 // set up view engine
 app.set('view engine', 'ejs');
 // path for the ejs files directory, views
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', './views');        // another way of set without using path
+// app.set('views', path.join(__dirname, 'views'));
 
 
 // start server
