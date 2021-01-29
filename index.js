@@ -5,6 +5,8 @@ const path = require('path');
 const port = 8000;
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
+// import firebase config module
+const firebase = require('./config/firebase');
 
 // middleware for accessing static files from
 app.use(express.static('./assets'));
