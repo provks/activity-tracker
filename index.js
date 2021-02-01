@@ -8,7 +8,13 @@ const expressLayouts = require('express-ejs-layouts');
 // import firebase config module
 const firebase = require('./config/firebase');
 
-// middleware for accessing static files from
+// firebase-admin
+const admin = require('firebase-admin');
+admin.initializeApp();
+
+const db = admin.firestore();
+
+// middleware for accessing static files from assets directory
 app.use(express.static('./assets'));
 
 // to allow express to use layouts

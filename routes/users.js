@@ -7,4 +7,8 @@ console.log("router loaded!");
 // calling users controller
 router.get('/', usersController.profile);
 
+router.get('/login', usersController.login);
+
+router.get('/profile', usersController.profile);
+
 module.exports = router;
