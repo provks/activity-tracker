@@ -1,0 +1,14 @@
+.page-wrap {
+    min-height: 100vh;
+    background-image: url('https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2011/06/thumb_720_450_kitten-sleeping-on-back_shutterstock_57492508.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card {
+    background-color: rgba(255, 255, 255, 60%);
+}
+.text-salmon{
+    color: lightcoral;
+}

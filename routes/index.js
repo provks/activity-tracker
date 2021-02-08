@@ -9,4 +9,11 @@ router.get('/', homeController.home);
 // poiting to users router
 router.use('/users', require('./users'));
 
+// handle 404
+router.get("*", function(req, res) {
+    return res.render('404', {
+        title: "Trackit - 404"
+    });
+});
+
 module.exports = router;
