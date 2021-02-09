@@ -11,4 +11,6 @@ router.get('/login', usersController.login);
 
 router.get('/profile', usersController.profile);
 
+router.use('/tasks', require('./tasks'));
+
 module.exports = router;

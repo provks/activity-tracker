@@ -1,0 +1,106 @@
+<!-- Modal for editing task -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="" id="update-task-form" method="GET">
+                <div class="modal-body">
+                    <textarea class="w-100" name="content" id="task-title" rows="5" required></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- MAIN SECTION BEGINS -->
+<main class="container-fluid mt-5 pt-4">
+    <div class="row justify-content-around">
+        <!-- Left column -->
+        <div class="col-3">
+            <!-- Timer -->
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <p class="small">Active task: <span>Title of the active task</span></p>
+                    <h3 class="card-title m-0">Timer 00:00</h3>
+                    <!-- BREAK BUTTONS -->
+                    <div class="row justify-content-around mt-2">
+                        <button class="btn btn-primary btn-sm">Lunch Time</button>
+                        <button class="btn btn-primary btn-sm">Take Break</button>
+                    </div>
+                </div>
+            </div>
+            <!-- COMPLETED TASKS LIST -->
+            <div class="card list-group list-group-flush">
+                <h5 class="card-header">Completed Tasks</h5>
+                <li class="list-group-item">
+                    A second link item
+                </li>
+                <li class="list-group-item">
+                    A third link item
+                </li>
+                <li class="list-group-item">
+                    A fourth link item
+                </li>
+                <li class="list-group-item disabled" tabindex="-1" aria-disabled="true">
+                    A disabled link item
+                </li>
+            </div>
+        </div>
+        <!-- Right column -->
+        <div class="col-7">
+            <!-- FORM TO CREATE TASK -->
+            <!-- create task Form Begins -->
+            <section class="card mb-4">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">New Task</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <form action="tasks/create" id="new-task-form" method="POST">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">
+                                <div class="form-group">
+                                    <label class="sr-only" for="message">task</label>
+                                    <input class="form-control" name="content" id="message" rows="3" placeholder="Task title.." autofocus required></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary px-3">Create task</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--- create task Form Ends -->
+            <!-- LIST OF TASKS -->
+            <section id="tasks-list-container">
+                <div class="card list-group list-group-flush">
+                    <h5 class="card-header">Tasks to do</h5>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        A second link item <a href="javascript:void(0);" role="button" class="btn btn-primary btn-sm"> &gt; Begin</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        A third link item <a href="javascript:void(0);" role="button" class="btn btn-primary btn-sm"> &gt; Begin</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        A fourth link item <a href="javascript:void(0);" role="button" class="btn btn-primary btn-sm"> &gt; Begin</a>
+                    </li>
+                    <li class="list-group-item disabled d-flex justify-content-between align-items-center" tabindex="-1" aria-disabled="true">
+                        A disabled link item <a href="javascript:void(0);" role="button" class="btn btn-primary btn-sm disabled"> &gt; Begin</a>
+                    </li>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>

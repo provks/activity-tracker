@@ -6,7 +6,7 @@ console.log("router loaded!");
 // calling home controller
 router.get('/', homeController.home);
 
-// poiting to users router
+// pointing to users router
 router.use('/users', require('./users'));
 
 // handle 404
